@@ -32,8 +32,8 @@ const categories = [
 
   return (
     <div className="categories-container">
-      {categories.map(({title, subtitle})=>(
-      <div className="category-container">
+      {categories.map(({title, subtitle, id})=>(
+      <div key={id} className="category-container">
         {/* <img src="" alt=""> */}
         <div className="background-image"></div>
         <div className="category-body-container">
