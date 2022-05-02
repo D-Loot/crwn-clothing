@@ -1,46 +1,45 @@
 import './categories.styles.scss';
+import CategoryItem from './components/category-item/category-item.component.jsx'
 
 const App = () => {
 
 const categories = [
-  {
-    id: 1,
-    title: "Hats",
-    subtitle: "Shop Now"
-  },
-  {
-    id: 2,
-    title: "Jackets",
-    subtitle: "Shop Now"
-  },
-  {
-    id: 3,
-    title: "Sneakers",
-    subtitle: "Shop Now"
-  },
-  {
-    id: 4,
-    title: "Men's",
-    subtitle: "Shop Now"
-  },
-  {
-    id: 5,
-    title: "Women's",
-    subtitle: "Shop Now"
-  }
-]
+    {
+      "id": 1,
+      "title": "hats",
+      "imageUrl": "https://i.ibb.co/cvpntL1/hats.png",
+      "subtitle": "Shop Now"
+    },
+    {
+      "id": 2,
+      "title": "jackets",
+      "imageUrl": "https://i.ibb.co/px2tCc3/jackets.png",
+      "subtitle": "Shop Now"
+    },
+    {
+      "id": 3,
+      "title": "sneakers",
+      "imageUrl": "https://i.ibb.co/0jqHpnp/sneakers.png",
+      "subtitle": "Shop Now"
+    },
+    {
+      "id": 4,
+      "title": "womens",
+      "imageUrl": "https://i.ibb.co/GCCdy8t/womens.png",
+      "subtitle": "Shop Now"
+    },
+    {
+      "id": 5,
+      "title": "mens",
+      "imageUrl": "https://i.ibb.co/R70vBrQ/men.png",
+      "subtitle": "Shop Now"
+    }
+  ];
 
   return (
     <div className="categories-container">
-      {categories.map(({title, subtitle, id})=>(
-      <div key={id} className="category-container">
-        {/* <img src="" alt=""> */}
-        <div className="background-image"></div>
-        <div className="category-body-container">
-          <h2>{title}</h2>
-          <p>{subtitle}</p>
-        </div>
-      </div>
+      {categories.map((category)=>(
+        <CategoryItem key={category.id} category={category}/>
       ))}
     </div>
   );
