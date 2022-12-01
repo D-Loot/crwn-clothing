@@ -15,8 +15,8 @@ render(
   <React.StrictMode>
     <BrowserRouter>
       <UserProvider>
-        <CategoriesProvider>
-          <CartProvider>
+        <CategoriesProvider>{/* Added */}
+          <CartProvider>{/* Added */}
             <App />
           </CartProvider>
         </CategoriesProvider>
