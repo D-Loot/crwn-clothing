@@ -14,10 +14,10 @@ import {
   doc,
   getDoc,
   setDoc,
-  collection,
-  writeBatch,
-  query,
-  getDocs,
+  collection, //Used to import shop-data.js to firebase
+  writeBatch, //Used to import shop-data.js to firebase
+  query, // Get data from firebase instead of json data
+  getDocs, // Get data from firebase instead of json data
 } from 'firebase/firestore';
 // https://console.firebase.google.com/u/0/project/crwn-clothing-dloot/overview
 
@@ -45,6 +45,7 @@ export const signInWithGoogleRedirect = () =>
 
 export const db = getFirestore();
 
+//Used to import shop-data.js to firebase
 export const addCollectionAndDocuments = async (
   collectionKey,
   objectsToAdd,
@@ -62,6 +63,7 @@ export const addCollectionAndDocuments = async (
   console.log('done');
 };
 
+// Get data from firebase instead of json data
 export const getCategoriesAndDocuments = async () => {
   const collectionRef = collection(db, 'categories');
   const q = query(collectionRef);

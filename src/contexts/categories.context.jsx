@@ -1,3 +1,5 @@
+// Updated from products.context.jsx
+
 import { createContext, useState, useEffect } from 'react';
 
 import { getCategoriesAndDocuments } from '../utils/firebase/firebase.utils';

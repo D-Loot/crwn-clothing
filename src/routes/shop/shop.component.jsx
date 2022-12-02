@@ -8,7 +8,7 @@ import './shop.styles.scss';
 const Shop = () => {
   return (
     <Routes>
-      <Route index element={<CategoriesPreview />} />
+      <Route index element={<CategoriesPreview />} /> {/* Update using category-component*/}
       <Route path=':category' element={<Category />} />
     </Routes>
   );
