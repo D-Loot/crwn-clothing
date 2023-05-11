@@ -1,3 +1,49 @@
+# Commands
+
+Start in the folder that you want to inser the project into.
+The create-react-app will insert a new folder into the folder that it is run on.
+-------------------------------------
+my-app = name of application
+
+npx create-react-app my-app
+cd my-app
+npm start
+
+
+yarn add reselect
+yarn add redux-persist
+yarn add redux-saga
+
+-------------------------------------
+(instead of npm start)
+yarn start
+-------------------------------------
+ERROR in Plugin "react" was conflicted between "package.json » eslint-config-react-app » C:\Users\asus\desktop\google-clone\node_modules\eslint-config-react-app\base.js" and "BaseConfig » C:\Users\asus\Desktop\google-clone\node_modules\eslint-config-react-app\base.js".
+
+Open the package.json and type ctrl + s and it disappears.
+
+-------------------------------------
+https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
+-------------------------------------
+yarn add sass
+-------------------------------------
+Add .ENV File:
+DISABLE_ESLINT_PLUGIN=true
+ESLINT_NO_DEV_ERRORS=true
+-------------------------------------
+Routing:
+yarn add react-router-dom@6
+yarn add firebase
+-------------------------------------
+Styling:
+yarn add sstyled-components
+-------------------------------------
+Redux Installation
+yarn add redux react-redux redux-logger
+
+-------------------------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
