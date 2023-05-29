@@ -1,4 +1,3 @@
-// Creates large singular reducer for user/categories/cart
 import { combineReducers } from 'redux';
 
 import { userReducer } from './user/user.reducer';
